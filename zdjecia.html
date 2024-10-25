@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title><!DOCTYPE html>
+        <html lang="pl">
+        <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Formularz kontaktowy</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f9f9f9;
+            margin: 0;
+            padding: 20px;
+        }
+        form {
+            background-color: #fff;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+        input, label {
+            display: block;
+            margin-bottom: 10px;
+        }
+    </style>
+</head>
+<body>
+
+<h1>Formularz kontaktowy</h1>
+
+<form action="zdjecia.php" method="post" enctype="multipart/form-data">
+    <p>max wysokosc: </p> <input type="number" name="wys"><br>
+    <p>max szerokosc: </p> <input type="number" name="szer"><br>
+    <p>Plik jpg</p> <input type="file" name="zdjecie"><br>
+    <input type="submit" value="zapisz" name="zapisz">
+</form>
+
+</body>
+</html>
